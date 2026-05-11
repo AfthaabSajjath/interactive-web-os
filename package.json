@@ -1,0 +1,19 @@
+{
+  "name": "interactive-web-os",
+  "version": "1.0.0",
+  "description": "Interactive Web OS - A browser-based operating system simulation",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "build": "npm run build:frontend && npm run build:backend",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:frontend": "cd frontend && npm run build",
+    "dev:backend": "cd backend && npm run dev",
+    "build:backend": "cd backend && npm run build",
+    "start:backend": "cd backend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

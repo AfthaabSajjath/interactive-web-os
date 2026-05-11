@@ -1,0 +1,89 @@
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 3rem;
+  border-bottom: 2px solid #646cff;
+  padding-bottom: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+header p {
+  margin: 0.5rem 0 0 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 2rem;
+}
+
+section h2 {
+  margin-top: 0;
+  color: #646cff;
+}
+
+.info-box,
+.counter-box {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.info-box p,
+.counter-box p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+}
+
+.counter-box {
+  text-align: center;
+}
+
+.counter-box strong {
+  color: #646cff;
+  font-size: 2rem;
+}
+
+footer {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 1rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .app-container {
+    padding: 1rem;
+  }
+}
